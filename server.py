@@ -14,4 +14,4 @@ def add_message():
 	return jsonify(len(tokenizer.tokenize(prompt)))
 
 if __name__ == '__main__':
-	app.run(host='127.0.0.1',port=espm.port,debug=False)
+	app.run(host=espm.host,port=espm.port,debug=False)
